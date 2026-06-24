@@ -15,6 +15,7 @@ LangGraph SQL Assistant lets you query structured databases in plain English. It
 
 Supports **Groq**, **OpenRouter**, **llama.cpp** (local), and **Ollama** (local) — switchable at runtime from the UI without restarting.
 
+### Note i am using miniconda so you can adjust accordingly and make sure to fork(click the star) this project to support.
 ---
 
 ## Demo
