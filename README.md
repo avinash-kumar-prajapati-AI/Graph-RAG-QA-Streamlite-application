@@ -4,7 +4,7 @@
 
 [![Python](https://img.shields.io/badge/Python-3.10%2B-blue?logo=python&logoColor=white)](https://www.python.org/)
 [![LangGraph](https://img.shields.io/badge/LangGraph-0.2%2B-orange)](https://github.com/langchain-ai/langgraph)
-[![Gradio](https://img.shields.io/badge/Gradio-4.x-blueviolet?logo=gradio)](https://gradio.app/)
+[![Gradio](https://img.shields.io/badge/Gradio-6.x-blueviolet?logo=gradio)](https://gradio.app/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
 ---
@@ -104,31 +104,26 @@ Edit `.env`:
 # Provider to use on startup (ollama | llamacpp | groq | openrouter)
 LLM_PROVIDER=ollama
 
-# Optional: override the provider's default model
+# Optional: override the provider's default model.
+# Note that the small LLM mean lesser reasioning capacity and migh provide irrelevent results (LLM above 10b param works fine)
 # LLM_MODEL=llama3.2:3b
 
 # API keys — only needed for cloud providers
 GROQ_API_KEY=gsk_...
 OPENROUTER_API_KEY=sk-or-...
 
-# Agent settings
-MAX_HISTORY_TURNS=12
-AGENT_RECURSION_LIMIT=30
-
-# Gradio server
-GRADIO_SERVER_PORT=7860
-GRADIO_SERVER_NAME=127.0.0.1
-GRADIO_SHARE=false
-```
+# you can change the LLM_provider to groq also but openrouter is better than other
+#LLM_PROVIDER='openrouter'
 
 ### 3. Run
 
 ```bash
-python src/app.py
+python app.py
 ```
 
 Open [http://localhost:7860](http://localhost:7860).
 
+### you can even just run the last cell of the this jupyter notebook and visit the local web page(the http://localhost:7860) to view in browser.
 ---
 
 ## Provider Setup
