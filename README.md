@@ -14,6 +14,7 @@
 LangGraph SQL Assistant lets you query structured databases in plain English. It resolves follow-up questions using conversation history, selects the right database automatically, generates optimised SQL (CTEs, window functions, aggregations), executes it read-only, and returns a natural-language summary alongside the raw SQL used.
 
 Supports **Groq**, **OpenRouter**, **llama.cpp** (local), and **Ollama** (local) — switchable at runtime from the UI without restarting.
+<img width="1384" height="904" alt="image" src="https://github.com/user-attachments/assets/17b0d6cd-43af-4b80-9833-ebf11ced4f1b" />
 
 ### Note i am using miniconda so you can adjust accordingly and make sure to fork(click the star) this project to support.
 ---
